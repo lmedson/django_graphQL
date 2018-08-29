@@ -55,6 +55,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+<<<<<<< HEAD
+=======
     #auth graphql
      'graphql_jwt.middleware.JSONWebTokenMiddleware',
 ]
@@ -62,6 +64,7 @@ MIDDLEWARE = [
 AUTHENTICATION_BACKENDS = [
     'graphql_jwt.backends.JSONWebTokenBackend',
     'django.contrib.auth.backends.ModelBackend',
+>>>>>>> auth
 ]
 
 ROOT_URLCONF = 'hackernews.urls'

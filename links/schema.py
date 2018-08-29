@@ -14,7 +14,11 @@ class Query(graphene.ObjectType):
 
     def resolve_links(self, info, **kwargs):
         return Link.objects.all()
+<<<<<<< HEAD
 
+=======
+#1
+>>>>>>> auth
 ''' define uma classe mutação, em seguida, definida a saída da mutação, 
     os dados que o servidor poderá retornar ao user. A saída é definida 
     campo a campo para fins de aprendizado. Na próxima mutação, serão definidos como apenas um.'''
@@ -43,6 +47,10 @@ class CreateLink(graphene.Mutation):
             description=link.description,
         )
 
+<<<<<<< HEAD
 
+=======
+'''Cria uma classe de mutação com um campo a ser resolvido, o que aponta para a nossa mutação definida anteriormente.'''
+>>>>>>> auth
 class Mutation(graphene.ObjectType):
     create_link = CreateLink.Field()

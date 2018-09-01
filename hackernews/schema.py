@@ -1,5 +1,7 @@
 import graphene
+import graphql_jwt
 import links.schema
+import users.schema
 
 
 class Query(links.schema.Query, graphene.ObjectType):
@@ -9,9 +11,6 @@ class Query(links.schema.Query, graphene.ObjectType):
 class Mutation(links.schema.Mutation, graphene.ObjectType):
     pass
 
-import graphql_jwt
-import links.schema
-import users.schema
 
 #ativando a consulta na classe principal
 class Query(users.schema.Query, links.schema.Query, graphene.ObjectType):
